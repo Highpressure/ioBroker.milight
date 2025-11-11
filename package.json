@@ -2,44 +2,38 @@
   "name": "iobroker.milight",
   "version": "0.1.1",
   "description": "ioBroker milight Adapter",
-  "author": {
-    "name": "foxthefox",
-    "email": ""
-  },
-  "contributors": [
-    {
-      "name": "foxthefox"
-    },
-    {
-      "name": "bluefox",
-      "email": "dogafox@gmail.com"
-    }
-  ],
-  "homepage": "https://github.com/foxthefox/ioBroker.milight",
+  "main": "milight.js",
   "license": "MIT",
   "keywords": ["ioBroker", "light", "easybulb", "milight", "limitlessLED"],
+
   "repository": {
     "type": "git",
-    "url": "https://github.com/foxthefox/ioBroker.milight"
-  },
-  "dependencies": {
-    "node-milight-promise": "^0.0.9"
-  },
-  "devDependencies": {
-      "grunt": "^0.4.5",
-      "grunt-replace": "^0.9.3",
-      "grunt-contrib-jshint": "^0.11.2",
-      "grunt-jscs": "^2.0.0",
-      "grunt-http": "^1.6.0",    
-      "mocha": "^2.4.5",
-      "chai": "^3.5.0"
+    "url": "git+https://github.com/Highpressure/ioBroker.milight.git"
   },
   "bugs": {
-    "url": "https://github.com/foxthefox/ioBroker.milight/issues"
+    "url": "https://github.com/Highpressure/ioBroker.milight/issues"
   },
-  "main": "milight.js",
+  "homepage": "https://github.com/Highpressure/ioBroker.milight#readme",
+
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.1.0",
+    "node-milight-promise": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-http": "^1.6.0",
+    "grunt-jscs": "^2.0.0",
+    "grunt-replace": "^0.9.3",
+    "mocha": "^2.4.5"
+  },
+
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha"
-  },
-  "readmeFilename": "README.md"
+  }
 }
